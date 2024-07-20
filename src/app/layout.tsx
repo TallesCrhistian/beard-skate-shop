@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter , Nanum_Brush_Script } from "next/font/google";
 import "./globals.css";
+import NavBarMobile from "@/Components/Header/NavBarMobile";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+const nanum_brush_script  = Nanum_Brush_Script({
+  weight: "400",
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nanum_brush_script',
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={`${inter.style} ${nanum_brush_script.variable}`}>
+      <NavBarMobile />
+        {children}</body>
     </html>
   );
 }
