@@ -5,7 +5,7 @@ import ArrowCircle from '/public/images/ArrowCircleRight.png';
 
 const CardProduct: React.FC<CardProductType> = ({ conditition, imageAlt, imageSrc, name, price }) => {
     return (
-        <div className="flex flex-col justify-center items-center text-center p-3">
+        <div className="w-48 sm:w-60 flex flex-col justify-center items-center text-center p-3">
             <div className="p-2 flex justify-center border w-full items-center">
                 <Image src={imageSrc} alt={imageAlt} />
             </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter , Nanum_Brush_Script } from "next/font/google";
 import "./globals.css";
 import NavBarMobile from "@/Components/Header/NavBarMobile";
+import NavBarMidScreen from "@/Components/Header/NavBarMidScreen";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,7 +30,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${inter.style} ${nanum_brush_script.variable}`}>
-      <NavBarMobile />
+      <NavBarMobile/>
+      <NavBarMidScreen/>
         {children}</body>
     </html>
   );
