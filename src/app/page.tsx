@@ -9,7 +9,7 @@ import CardProduct from "@/Components/CardProduct/CardProduc";
 
 export default function Home() {
 
- const stringList = [<Image key={"1"}  className="w-full"  src={ImageLarga} alt="Test"/>, <Image key={"2"} className="w-full" src={ImageLarga} alt="Test"/>]
+ const stringList = [<Image key={35}  className="w-full"  src={ImageLarga} alt="Test"/>, <Image key={36} className="w-full" src={ImageLarga} alt="Test"/>]
 
   return (
     <main className="bg-primary-black">
@@ -40,28 +40,28 @@ export default function Home() {
         </h1>
         <div className="flex flex-wrap justify-around">
           <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={56} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
           <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test1"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={1} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
  <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test2"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={2} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
           <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test3"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={2} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
 <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test4"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={11} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
           <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test5"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={22} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
  <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test6"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={12} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
           <CardProduct conditition="6x  de R$ 60,99
-5% de desconto a vista!" imageAlt="shape" key={"test7"} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
+5% de desconto a vista!" imageAlt="shape" key={44} imageSrc={ShapeImage} price="299,99" name="Shape Santa Cruz
 Maple  Canadense"/>
         </div>
       </section>

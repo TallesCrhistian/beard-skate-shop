@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.style} ${nanum_brush_script.variable}`}>
+     <body className={`${inter.variable} ${nanum_brush_script.variable}`}>
       <NavBarMobile/>
       <NavBarMidScreen/>
         {children}</body>
