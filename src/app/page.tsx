@@ -9,7 +9,7 @@ import CardProduct from "@/Components/CardProduct/CardProduc";
 
 export default function Home() {
 
- const stringList = [<Image key={35}  className="w-full"  src={ImageLarga} alt="Test"/>, <Image key={36} className="w-full" src={ImageLarga} alt="Test"/>]
+ const stringList = [<Image key={35}  className="w-full max-h-screen object-cover"  src={ImageLarga} alt="Test"/>, <Image key={36} className="w-full  max-h-screen object-cover" src={ImageLarga} alt="Test"/>]
 
   return (
     <main className="bg-primary-black">
