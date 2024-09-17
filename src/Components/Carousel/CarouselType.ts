@@ -1,4 +1,4 @@
 export interface CarouselType
 {
- items: React.ReactNode[]
+ items?: React.ReactNode[]
 }

@@ -7,7 +7,7 @@ import Search from "/public/images/Search.png"
 
 const NavBarMobile: React.FC = () => {
   return (
-    <section className='flex bg-primary-black justify-between p-2 md:hidden'>
+    <section className='flex bg-primary-black justify-between p-2 md:hidden border-b-2 border-white'>
       <div>
         <Image src={NavBarLogo} alt='List'/>
       </div>

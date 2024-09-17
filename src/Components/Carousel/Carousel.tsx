@@ -5,7 +5,7 @@ import { CarouselType } from './CarouselType';
 import ArrowRight from '/public/images/ArrowRight.png';
 import ArrowLeft from '/public/images/ArrowLeft.png';
 
-const Carousel: React.FC<CarouselType> = ({ items }) => {
+const Carousel: React.FC<CarouselType> = ({ items = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
