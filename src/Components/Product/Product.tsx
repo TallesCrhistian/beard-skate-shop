@@ -3,12 +3,15 @@ import TShirt from "@/images/Tshirt.png";
 import Carousel from "../Carousel/Carousel";
 import SewingTape from "@/images/SewingTape.png";
 import ButtonList from "../ButtonList/ButtonList";
+import Paint from "@/images/Paint.png";
 
 const Product: React.FC = () => {
 
     const stringList = [
         <Image key={1} src={TShirt} alt="T-shirt" />
     ];
+
+    const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00'];
 
     return (
         <div className="w-full">
@@ -27,6 +30,23 @@ const Product: React.FC = () => {
             <div className="flex">
                 <ButtonList/>
             </div>
+            <section className="p-5 text-center items-center justify-start">
+                <div className="flex">
+                    <Image key={10} src={Paint} alt="fita" />
+                    <h5 className="text-white font-inter text-2xl font-bold ml-2">Cor</h5>
+                </div>
+                <div className="flex p-5">
+                    {colors.map((color, index) => (
+                        <div key={index} className="flex flex-col items-center mr-4">
+                            {/* Circulo */}
+                            <div
+                                className="w-8 h-8 rounded-full border-4"
+                                style={{ borderColor: color }}
+                            ></div>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 }
